@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.svg" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css" />
-    <title>测试静态blog</title>
+    <title>深秋的浮生小记</title>
   </head>
 
   <body></body>
@@ -14,29 +15,29 @@
     window.miryth = {
       setting: { debug: true },
       header: {
-        title: '测试静态blog',
+        title: '深秋的浮生小记',
         nav: [
           { name: '首页', href: '/', icon: 'home' },
-          { name: '文章', href: '/posts', icon: 'article' },
+          { name: '小记', href: '/posts', icon: 'article' },
           { name: '关于', href: '/about', icon: 'info' },
-          { name: '小伙伴们', href: '/friends', icon: 'link' }
+          { name: '更多', href: '/friends', icon: 'link' }
         ]
       },
       content: {
         posts: {
           posts: [],
-          source: '/blog/spec/posts.md'
+          source: '/spec/posts.md'
         },
-        home: { source: '/blog/spec/home.md' },
-        notfound: { source: '/blog/spec/notfound.md' },
-        about: { source: '/blog/spec/about.md' },
+        home: { source: '/spec/home.md' },
+        notfound: { source: '/spec/notfound.md' },
+        about: { source: '/spec/about.md' },
         friends: {
-          source: '/blog/spec/friends.md',
+          source: '/spec/friends.md',
           friends: []
         }
       },
-      footer: { moeIcp: 'test' }
+      footer: { moeIcp: '生活在继续...' }
     }
   </script>
-  <script src="/blog//miryth.js"></script>
+  <script src="/miryth.js"></script>
 </html>
